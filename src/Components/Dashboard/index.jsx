@@ -12,6 +12,7 @@ import {
     EuiCode
   } from '@elastic/eui';
  import { delivery } from "../utils";
+ import { container } from "./styles";
 
 const Dashboard = ()=>{
 
@@ -166,7 +167,7 @@ const results = pageSize === 0?(
 )
 
     return(
-       <div>
+       <div className={container}>
 
 <EuiFlexGroup responsive={true} alignItems="center" justifyContent="spaceAround">
    

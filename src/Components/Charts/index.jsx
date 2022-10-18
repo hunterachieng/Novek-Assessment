@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import { delivery } from "../utils";
 import Layout from "../Layout";
 import { Chart } from "chart.js/auto";
-import { Bar , Line, Pie} from "react-chartjs-2";
+import { Bar , Line} from "react-chartjs-2";
 import { totalTrips } from "../utils";
 import { EuiComboBox,EuiFlexGroup,EuiText, EuiFlexItem} from "@elastic/eui";
-import { headerText } from "./styles";
+import { headerText , container} from "./styles";
 
 
 const Charts = () => {
@@ -121,6 +121,7 @@ const lineData ={
 
   return (
     <Layout header={"Data Overview"}>
+      <div className={container}>
          <h2 className={headerText}>Trips Taken</h2>
          <EuiFlexGroup responsive={true} alignItems="center" justifyContent="spaceAround">
    
@@ -155,7 +156,7 @@ const lineData ={
 
       <h2 className={headerText}>Driver Ratings</h2>
       <Bar data={chartData}/>
-
+</div>
     </Layout>
   );
 };

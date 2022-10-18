@@ -9,7 +9,8 @@ background-color:#363740
 
 export const sideNav = css `
 color:#ffffff;
-font-size:"3em"
+font-size:"3em";
+text-decoration: none
 `
 
 export const logoStyle = 
